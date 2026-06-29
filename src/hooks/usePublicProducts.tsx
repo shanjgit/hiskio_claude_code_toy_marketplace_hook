@@ -11,7 +11,8 @@ export interface PublicProduct {
   seller_name: string;
 }
 
-export type SortBy = 'created_at' | 'price_asc' | 'price_desc';
+export type SortBy = 'created_at';
+export type SortOrder = 'asc' | 'desc';
 
 export const usePublicProducts = () => {
   const [products, setProducts] = useState<PublicProduct[]>([]);

@@ -58,13 +58,13 @@ const FilterSheet = ({
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="desc" id="desc" />
                 <Label htmlFor="desc" className="text-foreground font-orator text-sm">
-                  Newest First
+                  {sortBy === 'price' ? 'High to Low' : 'Newest First'}
                 </Label>
               </div>
               <div className="flex items-center space-x-2">
                 <RadioGroupItem value="asc" id="asc" />
                 <Label htmlFor="asc" className="text-foreground font-orator text-sm">
-                  Oldest First
+                  {sortBy === 'price' ? 'Low to High' : 'Oldest First'}
                 </Label>
               </div>
             </RadioGroup>
